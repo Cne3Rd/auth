@@ -1,0 +1,57 @@
+form {
+   text-align: center;
+   padding: 20px;
+}
+
+
+input[name=username] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+
+input[name=email] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+
+input[name=password1] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+
+input[name=password2] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+
+input[name=smt] {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    width:250px;
+    background-color: rgb(1, 43, 135);
+}
+
+
+#register {
+    text-align: center;
+}
+
+#err {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+

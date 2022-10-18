@@ -1,0 +1,16 @@
+{{template "top" .}}
+
+
+<br><br>
+<h1 id="login"> Login </h1><br>
+<form method="post" action="/login">
+    <p style="color: red;" id="err"> {{ .err }} </p><br>
+
+    <input type="text" name="username" placeholder="Username"><br><br>
+    <input type="password" name="password1" placeholder="Password"><br><br>
+    <input type="submit" value="Login" name="smt">
+
+</form>
+
+
+{{template "bottom" .}}

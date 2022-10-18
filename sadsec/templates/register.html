@@ -1,0 +1,26 @@
+{{template "top" .}}
+
+<br><br>
+<h1 id="register"> Register </h1><br>
+
+<form method="post" action="/register" autocomplete="off" >
+
+    <p style="color: red;" id="err"> {{ .Gerr }} </p><br>
+
+    <input type="text" name="username" id="usr" placeholder="Username">
+    <p style="color: red;" id="err"> {{ .Uerr }} </p><br>
+
+    <input type="text" name="email" id="eml" placeholder="Email">
+    <p style="color: red;" id="err"> {{ .Eerr }} </p><br>
+
+    <input type="password" name="password1" id="pas1" placeholder="Password"><br><br>
+
+    <input type="password" name="password2" id="pas2" placeholder="Confirm Password">
+    <p style="color: red" id="err"> {{ .Perr   }} </p><br>
+    
+    <input type="submit" value="Register" name="smt">
+   
+
+</form>
+
+{{template "bottom" .}}

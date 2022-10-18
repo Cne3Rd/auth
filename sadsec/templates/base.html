@@ -1,0 +1,105 @@
+{{ define "top" }}
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <!-- metadata part -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- page title -->
+    <title> SaDsEc </title>
+    
+    <!-- external css source part -->
+    <link rel="stylesheet" href="/static/css/register.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@100&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@100&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+
+    </head>
+    <!-- body part --> 
+    <body>
+        <header>
+            <div class="container">
+              <div id="logo">
+                <span id="head"><a href="#" id="hd">SaDsEc</a> </span>
+              </div>
+                
+             <div id="nav-btn">
+               <svg viewBox="0 0 100 80" width="30" height="30"> 
+                 <rect y="10" x="15" width="80" height="10" rx="8" style="fill:grey"></rect>
+                     
+                 <rect y="40" x="15" width="60" height="10" rx="8" style="fill:grey"></rect> 
+                 
+                 <rect y="70" x="15" width="80" height="10" rx="8" style="fill:grey"></rect> 
+               </svg>          
+             </div>
+             
+                <div></div>
+                <div></div>
+                <br><br>
+        
+             
+             <nav id="menu-list">
+                <ul class="nav-menu">
+                  <li class="menu-active"><a href="">Home</a></li>
+                  <li><a href="#services">About Us</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#faqs">FAQs</a></li>
+                  <li><a href="#footer">Support</a></li>
+                  
+                  <div id id="ok">
+                    <li id="lbg1"><a href="/login">Login</a></li>
+                    <li id="lbg2"><a href="/register">Signup</a></li>
+                  </div>
+                  <br>
+                  <br>
+        
+                </ul>
+             </nav>
+          
+            </div>
+          </header>
+{{ end }}
+<br><br><br><br>
+<div></div>
+
+
+
+{{ define "bottom" }}
+
+    <!-- footer part -->
+    <footer>
+        <br><br><br><br><br><br><br><br><br>
+        SaDsEc &copy2022
+    </footer>  
+
+    <script>
+
+    $(function() {
+      $("#nav-btn").click(function() {
+        $("#menu-list").slideToggle(300);
+      });
+    });
+  
+    </script>
+
+    </body>
+</html>
+
+{{ end }}

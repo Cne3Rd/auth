@@ -1,0 +1,8 @@
+footer {
+    text-align: center;
+    position: relative;
+    top: 200px;
+    background-color: black;
+    height: 300px;
+    border-radius: 3px;
+}
