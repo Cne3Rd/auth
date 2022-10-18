@@ -120,8 +120,8 @@ func sendEmail(reciever, username, email string) {
 
 	msg := []byte("verify email http://127.0.0.1:8000/verify_your_email/" + username + "/" + email)
 
-	from := "n33ds0n@gmail.com"
-	password := "systemprogemming007"
+	from := "test@gmail.com"
+	password := "test"
 	smtpHost := "smtp.gmail.com"
 	smptPort := "587"
 
